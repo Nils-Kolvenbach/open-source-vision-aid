@@ -6,5 +6,5 @@ sudo apt-get autoclean -y
 
 cp ./start-camera.sh /etc/init.d/start-camera.sh
 sudo chmod +x /etc/init.d/start-camera.sh
-sudo update-rc.d start-camera defaults
+sudo update-rc.d start-camera.sh defaults
 sudo reboot
