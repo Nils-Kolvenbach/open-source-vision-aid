@@ -5,7 +5,7 @@
 # Required-Stop: $syslog
 # Default-Start: 2 3 4 5
 # Default-Stop: 0 1 6
-# Short-Description: starts the camera
+# Short-Description: Starts the camera preview
 # Description:
 ### END INIT INFO
 
