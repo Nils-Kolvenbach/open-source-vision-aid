@@ -3,6 +3,9 @@ A detailed how-to for people to build their own, low cost, electronic reading ai
 
 Most electronic reading aids are very costly. You can easily spend multiple thousands of euros for a simple full HD device. When my grandma needed one of these to continue reading newspapers and magazines, I was shocked to see the prices of these devices and decided to try and build one on my own. With hardware I partially already had lying around, I payed under 100€ in total and had a nice project to work on. Now my grandma uses it every day and is very happy about the simplicity of it. The only thing she has to do is turn it on with one switch of a button. With this repository I hope to help other people like my grandma to enjoy their day to day activities a little more again. 
 
+## Pre-Requirements
+- Computer (Windows / Mac / Linux) with an SD card reader
+
 ## Components
 | Type       | Name        | Description |
 | -----------| ----------- | ----------- |
@@ -18,21 +21,17 @@ Most electronic reading aids are very costly. You can easily spend multiple thou
 ## Tutorial
 Once you got all the components...
 
-### Install Raspberry Pi OS on the microSD Card
+### 1. Install Raspberry Pi OS on the microSD Card
 https://www.youtube.com/watch?v=ntaXWS8Lk34
 
-### Configure Raspberry Pi
-Connect to monitor, mouse and keyboard, boot, connect via WLAN and run setup.sh
+1. Install the Raspberry Pi Imager on your computer (not the Raspberry Pi)
+2. Insert the micro SD card into the computer and start the Imager
+3. Select the "RASPBERRY PI OS LITE (32-BIT)" as OS and the SD Card you just inserted
+4. Select the cog and configure WIFI as well as SSH access.
+5. Start writing to the SD Card and wait for it to be finished
+6. Once finieshed, take out the micro SD card from your computer and insert it into the Raspberry Pi
 
-1. `wget https://github.com/Nils-Kolvenbach/open-source-vision-aid`
-1. `cd open-source-vision-aid`
-1. `chmod +x ./setup.sh`
-1. `sudo ./setup.sh`
-
-Optional Remote Access:
-https://www.raspberrypi.com/documentation/computers/remote-access.html#remote-access
-
-### Connect all the components
+### 2. Connect all the components
 1. If you have a monitor arm, install it as the installation manual suggests
 2. Put the monitor on the arm
 3. Put the microSD Card into the computer
@@ -43,7 +42,15 @@ https://www.raspberrypi.com/documentation/computers/remote-access.html#remote-ac
 4. Connect the computer and the monitor with the HDMI and USB cable
 4. Connect the monitor with a power outlet and turn it on
 
-### Test everything and adjust the camera
+### 3. Configure Raspberry Pi
+Connect to monitor, mouse and keyboard, boot, connect via WLAN and run setup.sh
+
+1. `curl -sL https://github.com/Nils-Kolvenbach/open-source-vision-aid/archive/refs/heads/develop.tar.gz | tar xz`
+2. `cd open-source-vision-aid`
+3. `chmod +x ./setup.sh`
+4. `sudo ./setup.sh`
+
+### 4. Test everything and adjust the camera
 
 ## FAQ
 | Question    | Answer      |
