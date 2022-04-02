@@ -5,4 +5,5 @@ sudo apt-get autoremove -y
 sudo apt-get autoclean -y
 
 cp ./start-camera.sh /etc/init.d/start-camera.sh
+sudo chmod +x /etc/init.d/start-camera.sh
 sudo update-rc.d start-camera.sh defaults
